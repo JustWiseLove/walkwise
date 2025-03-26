@@ -100,8 +100,15 @@
            margin: 2rem auto;
            padding: 0 1rem;
            display: grid;
-           grid-template-columns: 1fr;
+           grid-template-columns: 1fr; /* Default: 1 column for smaller screens */
            gap: 2rem;
+       }
+
+       /* Media query for desktop screens (3 columns) */
+       @media (min-width: 768px) {
+           .main-content {
+               grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+           }
        }
 
        .article-preview {

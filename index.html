@@ -1,0 +1,295 @@
+<!DOCTYPE html> <!-- Declares HTML5 document type -->
+<html lang="en">
+<head>
+   <meta charset="UTF-8"> <!-- Sets character encoding -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enables responsive design -->
+   <title>Walk Wise - Home</title>
+   <style>
+       * { /* Reset default styles for consistency */
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Arial, sans-serif;
+       }
+
+       body { /* Basic page styling */
+           background-color: #ffffff;
+           color: #000000;
+           line-height: 1.6;
+       }
+
+       /* HEADER STYLING */
+       .header {
+           background-color: #00cc00;
+           padding: 1rem;
+           text-align: center;
+           color: white;
+       }
+
+       .header h1 {
+           font-size: 2.5rem;
+           margin-bottom: 0.5rem;
+       }
+
+       /* NAVIGATION BAR */
+       .nav {
+           background-color: #000000;
+           padding: 1rem;
+           text-align: center;
+       }
+
+       .nav a {
+           color: white;
+           text-decoration: none;
+           margin: 0 1rem;
+           font-size: 1.1rem;
+           transition: color 0.3s;
+       }
+
+       .nav a:hover {
+           color: #00cc00;
+       }
+
+       /* FEATURED ARTICLE SECTION */
+       .featured-article {
+           max-width: 1200px;
+           margin: 2rem auto;
+           padding: 2rem;
+           background-color: #e6ffe6;
+           border: 3px solid #00cc00;
+           border-radius: 8px;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+       }
+
+       .featured-article summary {
+           color: #00cc00;
+           font-size: 2.5rem;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           cursor: pointer;
+           padding: 0.5rem 0;
+           outline: none;
+           text-align: center;
+       }
+
+       .featured-article summary:hover {
+           color: #009900;
+       }
+
+       .featured-article details[open] summary {
+           margin-bottom: 1rem;
+       }
+
+       .featured-article p {
+           color: #333;
+           margin-bottom: 1rem;
+           font-size: 1.1rem;
+           text-align: center;
+       }
+
+       .featured-article .scripture {
+           font-style: italic;
+           color: #555;
+           margin: 0.5rem 0;
+           text-align: center;
+       }
+
+       /* MAIN CONTENT GRID */
+       .main-content {
+           max-width: 1200px;
+           margin: 2rem auto;
+           padding: 0 1rem;
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 2rem;
+       }
+
+       .article-preview {
+           background-color: #f0fff0;
+           padding: 1.5rem;
+           border-radius: 8px;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+           transition: transform 0.3s;
+       }
+
+       .article-preview:hover {
+           transform: translateY(-5px);
+           background-color: #e6ffe6;
+       }
+
+       .article-preview h2 {
+           color: #00cc00;
+           font-size: 1.8rem;
+           margin-bottom: 0.5rem;
+       }
+
+       .article-preview p {
+           color: #333;
+           margin-bottom: 1rem;
+       }
+
+       .article-preview a {
+           color: #00cc00;
+           text-decoration: none;
+           font-weight: bold;
+       }
+
+       .article-preview a:hover {
+           color: #009900;
+       }
+
+       /* QUOTE SECTION */
+       .quote {
+           text-align: center;
+           padding: 2rem;
+           font-style: italic;
+           color: #333;
+           font-size: 1.2rem;
+       }
+
+       /* FOOTER STYLING */
+       footer {
+           background-color: #00cc00;
+           color: white;
+           padding: 1rem;
+           text-align: center;
+           width: 100%;
+       }
+
+       /* DIAMOND BUTTON STYLING */
+       .diamond-btn { /* Creates the diamond-shaped button */
+           position: relative;
+           width: 50px;
+           height: 50px;
+           margin: 2rem auto 1rem auto; /* Centers and overlaps footer slightly */
+           transform: rotate(45deg); /* Turns square into diamond */
+           background-color: #00cc00;
+           overflow: hidden;
+           transition: background-color 0.3s;
+       }
+
+       .diamond-btn a { /* Styles the link inside the diamond */
+           display: flex;
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           justify-content: center;
+           align-items: center;
+           color: white;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 1.2rem;
+           transform: rotate(-45deg); /* Counter-rotates text to be readable */
+       }
+
+       .diamond-btn:hover { /* Hover effect for diamond button */
+           background-color: #009900;
+       }
+   </style>
+</head>
+<body>
+   <!-- HEADER SECTION -->
+   <div class="header">
+       <h1><a href="index.html" style="color: white; text-decoration: none;">Walk Wise</a></h1>
+       <p>Your Word Is Truth</p>
+   </div>
+
+   <!-- NAVIGATION BAR -->
+   <div class="nav">
+       <a href="truth.html">Explore Truth</a>
+       <a href="false.html">False Worship</a>
+   </div>
+
+   <!-- QUOTE SECTION -->
+   <div class="quote">
+       Proverbs 13:20<br>The one walking with the wise will become wise, But the one who has dealings with the stupid will fare badly.
+   </div>
+
+   <!-- FIRST FEATURED ARTICLE -->
+   <div class="featured-article">
+       <details>
+           <summary>Can You Break Free From Lies?</summary>
+           <p>To accept Bible truth, your personality matters. Some resist because they’ve been indoctrinated with lies for years. Jehovah seeks those with the right traits to break free and learn. What are they?</p>
+           <p><strong>1. Are you hungry for truth?</strong> A deep desire to know Jehovah drives you to seek His Word over human traditions.</p>
+           <p class="scripture">Matthew 5:6 - “Happy are those hungering and thirsting for righteousness, since they will be filled.”</p>
+           <p><strong>2. Are you honest with yourself?</strong> Facing the truth means admitting you might have been misled—hard, but vital for growth.</p>
+           <p class="scripture">Proverbs 12:17 - “The one speaking truth declares what is right, but a false witness speaks deceit.”</p>
+           <p><strong>3. Are you humble enough to change?</strong> Pride blocks learning; humility opens your heart to Jehovah’s correction.</p>
+           <p class="scripture">James 4:6 - “God opposes the haughty ones, but he gives undeserved kindness to the humble ones.”</p>
+           <p><strong>4. Are you open-minded to new ideas?</strong> Overcoming indoctrination requires examining the Bible without prejudice.</p>
+           <p class="scripture">Acts 17:11 - “They accepted the word with the greatest eagerness of mind, carefully examining the Scriptures daily.”</p>
+           <p><strong>5. Do you have courage to stand apart?</strong> Truth often means rejecting popular lies—courage keeps you firm.</p>
+           <p class="scripture">Joshua 1:9 - “Be courageous and strong… for Jehovah your God is with you.”</p>
+           <p>These traits—hunger, honesty, humility, open-mindedness, and courage—equip you to see past a lifetime of lies and embrace Jehovah’s truth!</p>
+       </details>
+   </div>
+
+   <!-- MAIN CONTENT GRID -->
+   <div class="main-content">
+       <div class="article-preview">
+           <h2>Memorial</h2>
+           <p>Learn about the annual commemoration of Jesus’ death, its significance, and why we observe it as he commanded.</p>
+           <a href="memorial.html">Read More</a>
+       </div>
+
+       <div class="article-preview">
+           <h2>Paradise</h2>
+           <p>Discover what the Bible says about the future paradise on earth, where peace and everlasting life will prevail.</p>
+           <a href="paradise.html">Read More</a>
+       </div>
+
+       <div class="article-preview">
+           <h2>Kingdom</h2>
+           <p>Explore God’s Kingdom, a heavenly government that will bring righteousness and transform the earth.</p>
+           <a href="kingdom.html">Read More</a>
+       </div>
+
+       <div class="article-preview">
+           <h2>Creation</h2>
+           <p>Understand Jehovah’s role as Creator, the process of creation, and its purpose for humanity.</p>
+           <a href="creation.html">Read More</a>
+       </div>
+
+       <div class="article-preview">
+           <h2>Organization</h2>
+           <p>Find out how Jehovah’s Witnesses are organized to preach the good news and support one another worldwide.</p>
+           <a href="organization.html">Read More</a>
+       </div>
+
+       <div class="article-preview">
+           <h2>Resurrection</h2>
+           <p>Learn about the hope of the resurrection, who will be raised, and what it means for the future.</p>
+           <a href="resurrection.html">Read More</a>
+       </div>
+
+       <!-- SECOND FEATURED ARTICLE -->
+       <div class="featured-article">
+           <details>
+               <summary>Prayer: Our Lifeline to Jehovah</summary>
+               <p>Prayer is a precious gift from Jehovah, allowing us to draw close to Him. Here are answers to key questions about this vital practice:</p>
+               <p><strong>1. Why should we pray to Jehovah?</strong> Prayer builds our relationship with God, showing our dependence on Him and gratitude for His blessings.</p>
+               <p class="scripture">Psalm 62:8 - “Trust in him at all times, O people; pour out your hearts before him. God is a refuge for us.”</p>
+               <p><strong>2. To whom should we pray?</strong> We pray only to Jehovah, the true God, through Jesus Christ, not to saints, idols, or anyone else.</p>
+               <p class="scripture">John 14:6 - “Jesus said to him: ‘I am the way and the truth and the life. No one comes to the Father except through me.’”</p>
+               <p><strong>3. What should we pray for?</strong> Pray for God’s Kingdom, personal needs, forgiveness, and strength to do His will—always putting spiritual matters first.</p>
+               <p class="scripture">Matthew 6:9-10 - “You must pray, then, this way: ‘Our Father in the heavens, let your name be sanctified. Let your Kingdom come.’”</p>
+               <p><strong>4. How should we pray?</strong> Pray with sincerity, respect, and faith, using our own words from the heart, not memorized chants or rituals.</p>
+               <p class="scripture">Matthew 6:7 - “When praying, do not say the same things over and over again as the people of the nations do.”</p>
+               <p><strong>5. When should we pray?</strong> Pray regularly—daily and in all circumstances—making it a constant part of life to stay close to Jehovah.</p>
+               <p class="scripture">1 Thessalonians 5:17 - “Pray constantly.”</p>
+               <p>Prayer is more than a duty; it’s our lifeline to Jehovah, strengthening us for today and preparing us for the future!</p>
+           </details>
+       </div>
+   </div>
+
+   <!-- DIAMOND BUTTON -->
+   <div class="diamond-btn">
+       <a href="fundamentals.html">JWL</a>
+   </div>
+
+   <!-- FOOTER -->
+   <footer>
+       <p>Copyright © 2025 Walk Wise. All Rights Reserved.</p>
+   </footer>
+</body>
+</html>

@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -22,7 +22,35 @@
                 <details>
                     <summary class="card-title">HTML COURSE</summary>
                     <div class="card-body" id="lesson-content">
-                        <!-- Numbered Navigation for Lessons -->
+                        <!-- Lesson 1 Placeholder -->
+                        <div id="lesson-1" class="lesson">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showLesson(1)">Last</button>
+                                <h2 class="lesson-heading">Lesson 1: Introduction to HTML</h2>
+                                <button class="nav-btn" onclick="showLesson(2)">Next</button>
+                            </div>
+                            <p>Placeholder for Lesson 1 content. This will include a description, code example, and in-action example.</p>
+                        </div>
+                        <!-- Lesson 2 Placeholder -->
+                        <div id="lesson-2" class="lesson" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showLesson(1)">Last</button>
+                                <h2 class="lesson-heading">Lesson 2: HTML Basics</h2>
+                                <button class="nav-btn" onclick="showLesson(3)">Next</button>
+                            </div>
+                            <p>Placeholder for Lesson 2 content. This will include a description, code example, and in-action example.</p>
+                        </div>
+                        <!-- Lessons 3–100 Placeholder -->
+                        <!-- Example for Lesson 100 -->
+                        <div id="lesson-100" class="lesson" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showLesson(99)">Last</button>
+                                <h2 class="lesson-heading">Lesson 100: Real-World HTML Project</h2>
+                                <button class="nav-btn" onclick="showLesson(100)">Next</button>
+                            </div>
+                            <p>Placeholder for Lesson 100 content. This will include a real-world example.</p>
+                        </div>
+                        <!-- Numbered Navigation for Lessons (Moved Below Lessons) -->
                         <div class="lesson-links">
                             <a href="#" onclick="showLesson(1)">1</a>
                             <a href="#" onclick="showLesson(2)">2</a>
@@ -125,22 +153,166 @@
                             <a href="#" onclick="showLesson(99)">99</a>
                             <a href="#" onclick="showLesson(100)">100</a>
                         </div>
-                        <!-- Lesson 1 Placeholder -->
-                        <div id="lesson-1" class="lesson">
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- HTML Test Section -->
+        <div class="highlight">
+            <div class="card card--featured">
+                <details>
+                    <summary class="card-title">HTML TEST</summary>
+                    <div class="card-body" id="test-content">
+                        <!-- Question 1 Placeholder -->
+                        <div id="question-1" class="question">
                             <div class="lesson-nav">
-                                <button class="nav-btn" onclick="showPreviousLesson()">Last</button>
-                                <h2 class="lesson-heading">Lesson 1: Introduction to HTML</h2>
-                                <button class="nav-btn" onclick="showNextLesson()">Next</button>
+                                <button class="nav-btn" onclick="showQuestion(1)">Last</button>
+                                <h2 class="lesson-heading">Question 1: HTML Basics</h2>
+                                <button class="nav-btn" onclick="showQuestion(2)">Next</button>
                             </div>
-                            <p>Placeholder for Lesson 1 content. This will include a description, code example, and in-action example.</p>
+                            <p>Placeholder for Question 1. This will include a multiple-choice question with options and a submit mechanism.</p>
                         </div>
-                        <!-- Lesson 2 Placeholder -->
-                        <div id="lesson-2" class="lesson" style="display: none;">
+                        <!-- Question 2 Placeholder -->
+                        <div id="question-2" class="question" style="display: none;">
                             <div class="lesson-nav">
-                                <button class="nav-btn" onclick="showPreviousLesson()">Last</button>
-                                <h2 class="lesson-heading">Lesson 2: HTML Basics</h2>
-                                <button class="nav-btn" onclick="showNextLesson()">Next</button>
+                                <button class="nav-btn" onclick="showQuestion(1)">Last</button>
+                                <h2 class="lesson-heading">Question 2: HTML Tags</h2>
+                                <button class="nav-btn" onclick="showQuestion(3)">Next</button>
                             </div>
-                            <p>Placeholder for Lesson 2 content. This will include a description, code example, and in-action example.</p>
+                            <p>Placeholder for Question 2. This will include a multiple-choice question with options and a submit mechanism.</p>
                         </div>
-                        <!-- Lessons 3–100
+                        <!-- Questions 3–50 Placeholder -->
+                        <!-- Example for Question 50 -->
+                        <div id="question-50" class="question" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showQuestion(49)">Last</button>
+                                <h2 class="lesson-heading">Question 50: Advanced HTML</h2>
+                                <button class="nav-btn" onclick="showQuestion(50)">Next</button>
+                            </div>
+                            <p>Placeholder for Question 50. This will include a multiple-choice question with options and a submit mechanism.</p>
+                        </div>
+                        <!-- Numbered Navigation for Questions -->
+                        <div class="lesson-links">
+                            <a href="#" onclick="showQuestion(1)">1</a>
+                            <a href="#" onclick="showQuestion(2)">2</a>
+                            <a href="#" onclick="showQuestion(3)">3</a>
+                            <a href="#" onclick="showQuestion(4)">4</a>
+                            <a href="#" onclick="showQuestion(5)">5</a>
+                            <a href="#" onclick="showQuestion(6)">6</a>
+                            <a href="#" onclick="showQuestion(7)">7</a>
+                            <a href="#" onclick="showQuestion(8)">8</a>
+                            <a href="#" onclick="showQuestion(9)">9</a>
+                            <a href="#" onclick="showQuestion(10)">10</a>
+                            <a href="#" onclick="showQuestion(11)">11</a>
+                            <a href="#" onclick="showQuestion(12)">12</a>
+                            <a href="#" onclick="showQuestion(13)">13</a>
+                            <a href="#" onclick="showQuestion(14)">14</a>
+                            <a href="#" onclick="showQuestion(15)">15</a>
+                            <a href="#" onclick="showQuestion(16)">16</a>
+                            <a href="#" onclick="showQuestion(17)">17</a>
+                            <a href="#" onclick="showQuestion(18)">18</a>
+                            <a href="#" onclick="showQuestion(19)">19</a>
+                            <a href="#" onclick="showQuestion(20)">20</a>
+                            <a href="#" onclick="showQuestion(21)">21</a>
+                            <a href="#" onclick="showQuestion(22)">22</a>
+                            <a href="#" onclick="showQuestion(23)">23</a>
+                            <a href="#" onclick="showQuestion(24)">24</a>
+                            <a href="#" onclick="showQuestion(25)">25</a>
+                            <a href="#" onclick="showQuestion(26)">26</a>
+                            <a href="#" onclick="showQuestion(27)">27</a>
+                            <a href="#" onclick="showQuestion(28)">28</a>
+                            <a href="#" onclick="showQuestion(29)">29</a>
+                            <a href="#" onclick="showQuestion(30)">30</a>
+                            <a href="#" onclick="showQuestion(31)">31</a>
+                            <a href="#" onclick="showQuestion(32)">32</a>
+                            <a href="#" onclick="showQuestion(33)">33</a>
+                            <a href="#" onclick="showQuestion(34)">34</a>
+                            <a href="#" onclick="showQuestion(35)">35</a>
+                            <a href="#" onclick="showQuestion(36)">36</a>
+                            <a href="#" onclick="showQuestion(37)">37</a>
+                            <a href="#" onclick="showQuestion(38)">38</a>
+                            <a href="#" onclick="showQuestion(39)">39</a>
+                            <a href="#" onclick="showQuestion(40)">40</a>
+                            <a href="#" onclick="showQuestion(41)">41</a>
+                            <a href="#" onclick="showQuestion(42)">42</a>
+                            <a href="#" onclick="showQuestion(43)">43</a>
+                            <a href="#" onclick="showQuestion(44)">44</a>
+                            <a href="#" onclick="showQuestion(45)">45</a>
+                            <a href="#" onclick="showQuestion(46)">46</a>
+                            <a href="#" onclick="showQuestion(47)">47</a>
+                            <a href="#" onclick="showQuestion(48)">48</a>
+                            <a href="#" onclick="showQuestion(49)">49</a>
+                            <a href="#" onclick="showQuestion(50)">50</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- HTML Library Section -->
+        <div class="highlight">
+            <div class="card card--featured">
+                <details>
+                    <summary class="card-title">HTML LIBRARY</summary>
+                    <div class="card-body">
+                        <p>Placeholder for HTML Library. This will include a dropdown list of all HTML tags and attributes with brief descriptions.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Just Wise Love. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentLesson = 1;
+        let currentQuestion = 1;
+        const totalLessons = 100;
+        const totalQuestions = 50;
+
+        function showLesson(lessonNumber) {
+            for (let i = 1; i <= totalLessons; i++) {
+                const lesson = document.getElementById(`lesson-${i}`);
+                if (lesson) {
+                    lesson.style.display = 'none';
+                }
+            }
+            const selectedLesson = document.getElementById(`lesson-${lessonNumber}`);
+            if (selectedLesson) {
+                selectedLesson.style.display = 'block';
+                currentLesson = lessonNumber;
+                const details = document.querySelector('#lesson-content details');
+                details.open = true;
+            }
+        }
+
+        function showQuestion(questionNumber) {
+            for (let i = 1; i <= totalQuestions; i++) {
+                const question = document.getElementById(`question-${i}`);
+                if (question) {
+                    question.style.display = 'none';
+                }
+            }
+            const selectedQuestion = document.getElementById(`question-${questionNumber}`);
+            if (selectedQuestion) {
+                selectedQuestion.style.display = 'block';
+                currentQuestion = questionNumber;
+                const details = document.querySelector('#test-content details');
+                details.open = true;
+            }
+        }
+
+        window.onload = function() {
+            showLesson(1);
+            showQuestion(1);
+            const lessonDetails = document.querySelector('#lesson-content details');
+            const testDetails = document.querySelector('#test-content details');
+            lessonDetails.open = false;
+            testDetails.open = false;
+        };
+    </script>
+</body>
+</html>

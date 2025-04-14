@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study - Just Wise Love</title>
+    <title>CODEXEDOC - HTML</title>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">STUDY</a></h1>
+        <h1><a href="index.html">COXEDEDOC</a></h1>
     </header>
 
     <div class="grid">
@@ -22,35 +22,142 @@
                 <details>
                     <summary class="card-title">HTML COURSE</summary>
                     <div class="card-body" id="lesson-content">
-                        <!-- Lesson 1 Placeholder -->
+                        <!-- Lesson 1 -->
                         <div id="lesson-1" class="lesson">
                             <div class="lesson-nav">
-                                <button class="nav-btn" onclick="showLesson(1)">Last</button>
-                                <h2 class="lesson-heading">Lesson 1: Introduction to HTML</h2>
+                                <button class="nav-btn" disabled>Last</button>
+                                <h2 class="lesson-heading">Lesson 1: What is HTML?</h2>
                                 <button class="nav-btn" onclick="showLesson(2)">Next</button>
                             </div>
-                            <p>Placeholder for Lesson 1 content. This will include a description, code example, and in-action example.</p>
+                            <p>HTML, or HyperText Markup Language, is the foundation of web development, defining the structure and content of web pages. Invented by Tim Berners-Lee in 1990, it was designed to share scientific documents across the early internet. Its importance lies in its ability to organize text, images, links, and media into a format that browsers can render universally. HTML’s simplicity makes it accessible for beginners, yet powerful enough for complex sites. Mastering HTML is essential for creating accessible, SEO-friendly, and user-focused websites.</p>
+                            <p><strong>Code Example:</strong></p>
+                            <pre>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>This is my first HTML page.</p>
+</body>
+</html>
+                            </pre>
+                            <p><strong>In Action:</strong></p>
+                            <div style="border: 1px solid #ccc; padding: 10px;">
+                                <h1>Welcome</h1>
+                                <p>This is my first HTML page.</p>
+                            </div>
                         </div>
-                        <!-- Lesson 2 Placeholder -->
+                        <!-- Lesson 2 -->
                         <div id="lesson-2" class="lesson" style="display: none;">
                             <div class="lesson-nav">
                                 <button class="nav-btn" onclick="showLesson(1)">Last</button>
-                                <h2 class="lesson-heading">Lesson 2: HTML Basics</h2>
+                                <h2 class="lesson-heading">Lesson 2: Why HTML Matters</h2>
                                 <button class="nav-btn" onclick="showLesson(3)">Next</button>
                             </div>
-                            <p>Placeholder for Lesson 2 content. This will include a description, code example, and in-action example.</p>
+                            <p>HTML is critical because it provides the structure that CSS and JavaScript build upon, forming the web’s core technology stack. Since its inception, HTML has evolved from simple text markup to supporting multimedia and interactive content. It ensures websites are accessible to diverse users, including those using screen readers. HTML’s semantic tags improve search engine rankings by making content meaningful to algorithms. Learning HTML empowers creators to build robust, user-friendly digital experiences.</p>
+                            <p><strong>Code Example:</strong></p>
+                            <pre>
+<article>
+    <header>
+        <h2>Blog Post</h2>
+    </header>
+    <p>A semantic article.</p>
+</article>
+                            </pre>
+                            <p><strong>In Action:</strong></p>
+                            <div style="border: 1px solid #ccc; padding: 10px;">
+                                <article>
+                                    <header>
+                                        <h2>Blog Post</h2>
+                                    </header>
+                                    <p>A semantic article.</p>
+                                </article>
+                            </div>
                         </div>
-                        <!-- Lessons 3–100 Placeholder -->
-                        <!-- Example for Lesson 100 -->
+                        <!-- Lesson 3 -->
+                        <div id="lesson-3" class="lesson" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showLesson(2)">Last</button>
+                                <h2 class="lesson-heading">Lesson 3: History of HTML</h2>
+                                <button class="nav-btn" onclick="showLesson(4)">Next</button>
+                            </div>
+                            <p>HTML’s history began in 1990 when Tim Berners-Lee proposed a hypertext system for the internet. The first version, HTML 1.0, was released in 1993, supporting basic text and links. HTML 2.0 (1995) added forms, followed by HTML 4.01 (1999), which introduced better styling support. HTML5, launched in 2014, brought multimedia, semantics, and APIs, revolutionizing web capabilities. This evolution reflects HTML’s adaptability to modern web demands.</p>
+                            <p><strong>Code Example:</strong></p>
+                            <pre>
+<video controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+                            </pre>
+                            <p><strong>In Action:</strong></p>
+                            <div style="border: 1px solid #ccc; padding: 10px;">
+                                <p>[Video placeholder - HTML5 video tag example]</p>
+                            </div>
+                        </div>
+                        <!-- Lesson 4 -->
+                        <div id="lesson-4" class="lesson" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showLesson(3)">Last</button>
+                                <h2 class="lesson-heading">Lesson 4: Uses of HTML</h2>
+                                <button class="nav-btn" onclick="showLesson(5)">Next</button>
+                            </div>
+                            <p>HTML is used to structure content on websites, from blogs to e-commerce platforms. It defines headings, paragraphs, lists, and links, creating navigable pages. HTML forms collect user input, like login details or search queries. It supports embedding media, such as images and videos, enhancing user engagement. HTML’s versatility makes it indispensable for building any web-based application.</p>
+                            <p><strong>Code Example:</strong></p>
+                            <pre>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="submit">Submit</button>
+</form>
+                            </pre>
+                            <p><strong>In Action:</strong></p>
+                            <div style="border: 1px solid #ccc; padding: 10px;">
+                                <form>
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name">
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Lesson 5 -->
+                        <div id="lesson-5" class="lesson" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showLesson(4)">Last</button>
+                                <h2 class="lesson-heading">Lesson 5: HTML’s Role in the Web</h2>
+                                <button class="nav-btn" disabled>Next</button>
+                            </div>
+                            <p>HTML acts as the web’s skeleton, providing structure that CSS styles and JavaScript animates. It ensures cross-browser compatibility, letting pages render consistently on Chrome, Firefox, or Safari. Semantic HTML enhances accessibility, helping users with disabilities navigate sites. It underpins content management systems like WordPress, enabling dynamic websites. HTML’s role is foundational, tying together all web technologies.</p>
+                            <p><strong>Code Example:</strong></p>
+                            <pre>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+                            </pre>
+                            <p><strong>In Action:</strong></p>
+                            <div style="border: 1px solid #ccc; padding: 10px;">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Lessons 6–100 -->
                         <div id="lesson-100" class="lesson" style="display: none;">
                             <div class="lesson-nav">
                                 <button class="nav-btn" onclick="showLesson(99)">Last</button>
                                 <h2 class="lesson-heading">Lesson 100: Real-World HTML Project</h2>
-                                <button class="nav-btn" onclick="showLesson(100)">Next</button>
+                                <button class="nav-btn" disabled>Next</button>
                             </div>
                             <p>Placeholder for Lesson 100 content. This will include a real-world example.</p>
                         </div>
-                        <!-- Numbered Navigation for Lessons (Moved Below Lessons) -->
+                        <!-- Numbered Navigation for Lessons -->
                         <div class="lesson-links">
                             <a href="#" onclick="showLesson(1)">1</a>
                             <a href="#" onclick="showLesson(2)">2</a>
@@ -164,33 +271,99 @@
                 <details>
                     <summary class="card-title">HTML TEST</summary>
                     <div class="card-body" id="test-content">
-                        <!-- Question 1 Placeholder -->
+                        <!-- Question 1 -->
                         <div id="question-1" class="question">
                             <div class="lesson-nav">
-                                <button class="nav-btn" onclick="showQuestion(1)">Last</button>
-                                <h2 class="lesson-heading">Question 1: HTML Basics</h2>
+                                <button class="nav-btn" disabled>Last</button>
+                                <h2 class="lesson-heading">Question 1: Purpose of HTML</h2>
                                 <button class="nav-btn" onclick="showQuestion(2)">Next</button>
                             </div>
-                            <p>Placeholder for Question 1. This will include a multiple-choice question with options and a submit mechanism.</p>
+                            <p>What is the primary purpose of HTML?</p>
+                            <form>
+                                <label><input type="radio" name="q1" value="a"> a) Styling web pages</label><br>
+                                <label><input type="radio" name="q1" value="b"> b) Structuring content</label><br>
+                                <label><input type="radio" name="q1" value="c"> c) Adding interactivity</label><br>
+                                <label><input type="radio" name="q1" value="d"> d) Managing databases</label><br>
+                                <button type="button" onclick="checkAnswer(1, 'b')">Submit</button>
+                            </form>
+                            <p id="result-1"></p>
                         </div>
-                        <!-- Question 2 Placeholder -->
+                        <!-- Question 2 -->
                         <div id="question-2" class="question" style="display: none;">
                             <div class="lesson-nav">
                                 <button class="nav-btn" onclick="showQuestion(1)">Last</button>
-                                <h2 class="lesson-heading">Question 2: HTML Tags</h2>
+                                <h2 class="lesson-heading">Question 2: DOCTYPE Declaration</h2>
                                 <button class="nav-btn" onclick="showQuestion(3)">Next</button>
                             </div>
-                            <p>Placeholder for Question 2. This will include a multiple-choice question with options and a submit mechanism.</p>
+                            <p>What does the <!DOCTYPE html> declaration do?</p>
+                            <form>
+                                <label><input type="radio" name="q2" value="a"> a) Links to CSS</label><br>
+                                <label><input type="radio" name="q2" value="b"> b) Defines HTML5</label><br>
+                                <label><input type="radio" name="q2" value="c"> c) Closes the page</label><br>
+                                <label><input type="radio" name="q2" value="d"> d) Adds JavaScript</label><br>
+                                <button type="button" onclick="checkAnswer(2, 'b')">Submit</button>
+                            </form>
+                            <p id="result-2"></p>
                         </div>
-                        <!-- Questions 3–50 Placeholder -->
-                        <!-- Example for Question 50 -->
+                        <!-- Question 3 -->
+                        <div id="question-3" class="question" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showQuestion(2)">Last</button>
+                                <h2 class="lesson-heading">Question 3: Semantic Tags</h2>
+                                <button class="nav-btn" onclick="showQuestion(4)">Next</button>
+                            </div>
+                            <p>Which tag is semantic?</p>
+                            <form>
+                                <label><input type="radio" name="q3" value="a"> a) &lt;div&gt;</label><br>
+                                <label><input type="radio" name="q3" value="b"> b) &lt;article&gt;</label><br>
+                                <label><input type="radio" name="q3" value="c"> c) &lt;span&gt;</label><br>
+                                <label><input type="radio" name="q3" value="d"> d) &lt;b&gt;</label><br>
+                                <button type="button" onclick="checkAnswer(3, 'b')">Submit</button>
+                            </form>
+                            <p id="result-3"></p>
+                        </div>
+                        <!-- Question 4 -->
+                        <div id="question-4" class="question" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showQuestion(3)">Last</button>
+                                <h2 class="lesson-heading">Question 4: HTML Version</h2>
+                                <button class="nav-btn" onclick="showQuestion(5)">Next</button>
+                            </div>
+                            <p>Which HTML version introduced the &lt;video&gt; tag?</p>
+                            <form>
+                                <label><input type="radio" name="q4" value="a"> a) HTML 3</label><br>
+                                <label><input type="radio" name="q4" value="b"> b) HTML 4</label><br>
+                                <label><input type="radio" name="q4" value="c"> c) HTML 5</label><br>
+                                <label><input type="radio" name="q4" value="d"> d) XHTML</label><br>
+                                <button type="button" onclick="checkAnswer(4, 'c')">Submit</button>
+                            </form>
+                            <p id="result-4"></p>
+                        </div>
+                        <!-- Question 5 -->
+                        <div id="question-5" class="question" style="display: none;">
+                            <div class="lesson-nav">
+                                <button class="nav-btn" onclick="showQuestion(4)">Last</button>
+                                <h2 class="lesson-heading">Question 5: Form Input</h2>
+                                <button class="nav-btn" disabled>Next</button>
+                            </div>
+                            <p>Which tag creates a text input field?</p>
+                            <form>
+                                <label><input type="radio" name="q5" value="a"> a) &lt;input&gt;</label><br>
+                                <label><input type="radio" name="q5" value="b"> b) &lt;button&gt;</label><br>
+                                <label><input type="radio" name="q5" value="c"> c) &lt;label&gt;</label><br>
+                                <label><input type="radio" name="q5" value="d"> d) &lt;form&gt;</label><br>
+                                <button type="button" onclick="checkAnswer(5, 'a')">Submit</button>
+                            </form>
+                            <p id="result-5"></p>
+                        </div>
+                                                <!-- Placeholder for Questions 6–50 -->
                         <div id="question-50" class="question" style="display: none;">
                             <div class="lesson-nav">
                                 <button class="nav-btn" onclick="showQuestion(49)">Last</button>
                                 <h2 class="lesson-heading">Question 50: Advanced HTML</h2>
-                                <button class="nav-btn" onclick="showQuestion(50)">Next</button>
+                                <button class="nav-btn" disabled>Next</button>
                             </div>
-                            <p>Placeholder for Question 50. This will include a multiple-choice question with options and a submit mechanism.</p>
+                            <p>Placeholder for Question 50.</p>
                         </div>
                         <!-- Numbered Navigation for Questions -->
                         <div class="lesson-links">
@@ -256,7 +429,86 @@
                 <details>
                     <summary class="card-title">HTML LIBRARY</summary>
                     <div class="card-body">
-                        <p>Placeholder for HTML Library. This will include a dropdown list of all HTML tags and attributes with brief descriptions.</p>
+                        <details>
+                            <summary>&lt;a&gt;</summary>
+                            <p>Creates a hyperlink to another page or resource.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;body&gt;</summary>
+                            <p>Contains the visible content of the web page.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;button&gt;</summary>
+                            <p>Creates a clickable button for user interaction.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;div&gt;</summary>
+                            <p>A container for grouping content or styling.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;form&gt;</summary>
+                            <p>Creates a form for user input, like text or selections.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;h1&gt;</summary>
+                            <p>Defines the most important heading (largest).</p>
+                        </details>
+                        <details>
+                            <summary>&lt;head&gt;</summary>
+                            <p>Contains metadata, like title and links to styles.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;html&gt;</summary>
+                            <p>The root element of an HTML document.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;img&gt;</summary>
+                            <p>Embeds an image in the page.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;input&gt;</summary>
+                            <p>Creates an input field for user data entry.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;label&gt;</summary>
+                            <p>Provides a caption for a form input.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;li&gt;</summary>
+                            <p>Defines a list item in an ordered or unordered list.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;link&gt;</summary>
+                            <p>Connects to external resources, like CSS files.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;meta&gt;</summary>
+                            <p>Provides metadata, like character set or viewport.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;nav&gt;</summary>
+                            <p>Defines a navigation section with links.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;p&gt;</summary>
+                            <p>Represents a paragraph of text.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;span&gt;</summary>
+                            <p>An inline container for styling small text portions.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;table&gt;</summary>
+                            <p>Creates a table for displaying data in rows and columns.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;title&gt;</summary>
+                            <p>Sets the page title shown in the browser tab.</p>
+                        </details>
+                        <details>
+                            <summary>&lt;ul&gt;</summary>
+                            <p>Creates an unordered (bulleted) list.</p>
+                        </details>
                     </div>
                 </details>
             </div>
@@ -302,6 +554,21 @@
                 currentQuestion = questionNumber;
                 const details = document.querySelector('#test-content details');
                 details.open = true;
+            }
+        }
+
+        function checkAnswer(questionNum, correctAnswer) {
+            const form = document.querySelector(`#question-${questionNum} form`);
+            const selected = form.querySelector('input[name="q' + questionNum + '"]:checked');
+            const result = document.getElementById(`result-${questionNum}`);
+            if (selected) {
+                if (selected.value === correctAnswer) {
+                    result.textContent = "Correct!";
+                } else {
+                    result.textContent = "Incorrect. Try again.";
+                }
+            } else {
+                result.textContent = "Please select an answer.";
             }
         }
 
